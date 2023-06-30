@@ -5,40 +5,39 @@
     <link rel="icon" type="image/svg+xml" href="/src/img/musica (1) 1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SERMUSIC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
   <body class="h-screen w-100%  overflow-hidden flex " >
     
       
-      <header class="h-full box-border bg-white relative w-[270px] ">
+      <header class="h-full box-border bg-red relative w-[270px] ">
 
         
 
-        <ul class="bg-white" >
-            <h1 class="flex bg-white  justify-center py-2">
-              <img class="h-[35px] w-[35px]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
+        <ul class="bg-red" >
+            <h1 class="flex bg-red  justify-center py-2">
+              <img class="h-[35px] w-[35px]" src="/img/musica (1) 1.png" alt="representacion de reproductor">
               <p class="self-center ... font-bold pl-1 pr-1  text text-xl">SERMUSIC</p>
-              <img class="h-[35px] w-[35x]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
+              <img class="h-[35px] w-[35x]" src="/img/musica (1) 1.png" alt="representacion de reproductor">
             </h1>
 
-            <!-- <div class="w-10 h-10 pl-3">
-              <img class="w-full h-full" src="./public/burger.svg" alt="">
-            </div> -->
 
             <li class="flex gap-5 bg-brown rounded-xl mx-2 my-1  ">
-              <img class="h-[50px] w-[50px] p-1" src="./src/img/Menu.png" alt="Menu">
+              <img class="h-[50px] w-[50px] p-1" src="/img/Menu.png" alt="Menu">
               <p class="self-center text-base font-bold">Home</p>
             </li>
 
             <li class="flex gap-5  bg-brown rounded-xl mx-2 my-1   ">
-              <img class="h-[50px] w-[50px] p-1" src="./src/img/Buscar.png" alt="Buscar">
+              <img class="h-[50px] w-[50px] p-1" src="/img/Buscar.png" alt="Buscar">
               <p class="self-center text-base font-bold">Search</p>
             </li>
 
             <li class=" bg-brown rounded-xl mx-2 my-1  ">
               <div class="flex gap-5 p-0.5">
-                <img class="h-[50px] w-[50px] " src="./src/img/Libreria.png" alt="libreria">
+                <img class="h-[50px] w-[50px] " src="/img/Libreria.png" alt="libreria">
                 <p class="self-center text-base font-bold" >Library</p>
-                <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
+                <button><img class="h-[15px] w-[15px]" src="/img/proximo.png" alt="mas"></button>
               </div>
 
               
@@ -46,24 +45,14 @@
 
           <li class=" bg-brown rounded-xl mx-2 my-1 ">
               <div class="flex gap-5 p-1">
-                <img class="h-[50px] w-[50px]" src="./src/img/Playlist.png" alt="Playlist">
+                <img class="h-[50px] w-[50px]" src="/img/Playlist.png" alt="Playlist">
                 <p class="self-center text-base font-bold">Playlist</p>
-                <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
+                <button><img class="h-[15px] w-[15px]" src="/img/proximo.png" alt="mas"></button>
               </div>
              
           </li>
 
-          <li class="flex flex-row absolute bottom-0 left-0 w-full  ">
-            <div class="bg-red flex h-20 w-full justify-evenly items-stretch    ">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/repetir.png" alt="repetir cancion">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Anterior.png" alt="Cancion anterior">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Pausa.png" alt="Pausar cancion">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Siguiente.png" alt="cancion Siguiente">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/aleatorio 1.png" alt="Canciones aleatorias">
-      
-            </div>
-
-          </li>
+          
 
             
 
@@ -82,13 +71,13 @@
           </div>
 
           <div class="flex flex-row self-center bg-white gap-4 rounded-full px-3 py-1  ">
-            <img class="h-[25px] w-[25x] " src="./src/img/buscarplaylist.png" alt="Buscar">
+            <img class="h-[25px] w-[25x] " src="/img/buscarplaylist.png" alt="Buscar">
             <p class="self-center font-normal">Buscar en Playlist</p>
           </div>
 
           <div class="self-center pr-4">
-            <button><img class="h-[35px] w-[35x]" src="./src/img/Menu 3 puntos.png" alt="Menu2"></button>
-            <button><img class="h-[35px] w-[35x]" src="./src/img/usuario.png" alt="Usuario"></button>
+            <button><img class="h-[35px] w-[35x]" src="/img/Menu 3 puntos.png" alt="Menu2"></button>
+            <button><img class="h-[35px] w-[35x]" src="/img/usuario.png" alt="Usuario"></button>
           </div>
 
 
@@ -96,54 +85,22 @@
 
 
 
-        <div class="bg-white grid grid-cols-1 2xl:lg:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-2 gap-0" id="track_list">
+        <div class="gap-4 p-4 bg-white grid grid-cols-1 2xl:lg:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 h-full pb-[140px] mx-auto overflow-auto" id="track_list">
 
-            <div class="bg-brown m-2 p-2 rounded-xl">
-              <div class="flex flex-row gap-1">
-                <img class="h-[100px] w-[100px]" src="./src/img/duki bzrap session.jpg" alt="Portada duki bzrap session">
-                <div >
-                  <p class="text-black text-sm font-bold">Duki: Bzrp Music Session, Vol.50</p>
-                  <p class="text-black text-sm">Bizarrap, Duki</p>
-                </div>
-              </div > 
-              <div class="flex flex-row justify-center">
-                <p class="text-black text-lg  pr-10 font-semibold">3:41</p>             
-              </div>                          
-            </div>           
+              
         </div>
 
-        <div class="bg-red w-full flex flex-row items-stretch justify-between absolute bottom-0 left-0 h-20">
-          <div class="flex pl-4">
-            <img class="h-[50px] w-[50px] self-center ... " src="./src/img/Harakiri portada.png" alt="Portada Harakiri">
-            <div class="flex flex-col self-center ...">
-              <p class="font-bold text-xl ">hARAkiRi</p>
-              <p class="text-base ">Duki,C.R.O</p>
+        <div id="reproductor">
+
+          <div class="bg-red w-full flex flex-row items-stretch justify-between absolute bottom-0 left-0 h-20">
+           
             </div>
+  
+  
           </div>
-
-          <div class="self-center ">
-            
-          </div>
-          
-          <div class=" flex" >
-            <p class="self-center ... p-2 font-medium">1:55</p>
-            <img class="h-[70px]" src="./src/img/Ondas de sonido reproduciendo.png" alt="Iondas de volumen reproduciendo">
-            <p class="self-center ... font-medium">2:49</p>
-          </div>
-        
-          <div class=" flex gap-3 pr-4" >
-            <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Expandir.png" alt="Expandir pantalla">
-            <div class="flex ">
-              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Volumen.png" alt="Volumen">
-              <img class="h-[10px] w-[60px] self-center ..."  src="./src/img/barra de volumen.png" alt="">
-            </div>
-            
-          </div>
-          
-
-
 
         </div>
+
 
       
 
