@@ -34,11 +34,11 @@ export const CurrentSong = (data: TSong) => {
     container?.appendChild(current)
 
     if (container) {
-        while (container.hasChildNodes()){
-            container.removeChild(container.firstChild)
+        // while (container.hasChildNodes()){
+        //     container.removeChild(container.firstChild)
 
 
-        }
+        // }
         container.appendChild(current)
     
 
