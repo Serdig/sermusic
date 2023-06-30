@@ -2,270 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/musica (1) 1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>SERMUSIC</title>
   </head>
-  <body class="bg-black h-screen overflow-hidden">
-
-    <header>
-
-      <nav>
-        
-        <ul class="flex flex-row">
-          
-          <li class="flex bg-white  w-[321px] justify-center py-2">
-            
-            
-            <img class="h-[35px] w-[35px]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
-            <p class="self-center ... font-bold pl-1  text text-xl">SERMUSIC</p>
-            
-            <img class="h-[35px] w-[35x]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
-            
-          </li>
-          
-          <li class="bg-red w-full flex flex-row items-stretch justify-between ">
-            
-            <div class="flex flex-row self-center pl-4 gap-5 text-xl">
-              <p class="font-bold">Playlist</p>
-              <p class="font-normal">Duko</p>
-            </div >
-            
-            <div class="flex flex-row self-center bg-white gap-4 rounded-full px-3 py-1  ">  
-                <img class="h-[25px] w-[25x] " src="./src/img/buscarplaylist.png" alt="Buscar">
-                <p class="self-center font-normal">Buscar en Playlist: Duko</p>
-            </div>
-            
-            
-
-            <div class="self-center pr-4">
-              <button><img class="h-[35px] w-[35x]" src="./src/img/Menu 3 puntos.png" alt="Menu2"></button>
-              <button><img class="h-[35px] w-[35x]" src="./src/img/usuario.png" alt="Usuario"></button>
-            </div>
-            
-          </li>
-          
-        </ul>
-        
-      </nav>
-      
-    </header>
+  <body class="h-screen w-100%  overflow-hidden flex " >
     
-    
-    
-    <main>
       
-      
-      
-      
-      <div class="flex flex-row items-stretch">
+      <header class="h-full box-border bg-white relative w-[270px] ">
+
         
-        <div class="bg-white w-[322px] ">
 
-          <div class="w-10 h-10 pl-3">
-            <img class="w-full h-full" src="./public/burger.svg" alt="">
-          </div>
-            <div>
-              <div class="flex gap-5 bg-brown rounded-xl mx-2 my-1  ">
-                <img class="h-[30px] w-[30px] p-1" src="./src/img/Menu.png" alt="Menu">
-                <p class="self-center text-base font-bold">Home</p>
+        <ul class="bg-white" >
+            <h1 class="flex bg-white  justify-center py-2">
+              <img class="h-[35px] w-[35px]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
+              <p class="self-center ... font-bold pl-1 pr-1  text text-xl">SERMUSIC</p>
+              <img class="h-[35px] w-[35x]" src="./src/img/musica (1) 1.png" alt="representacion de reproductor">
+            </h1>
+
+            <!-- <div class="w-10 h-10 pl-3">
+              <img class="w-full h-full" src="./public/burger.svg" alt="">
+            </div> -->
+
+            <li class="flex gap-5 bg-brown rounded-xl mx-2 my-1  ">
+              <img class="h-[50px] w-[50px] p-1" src="./src/img/Menu.png" alt="Menu">
+              <p class="self-center text-base font-bold">Home</p>
+            </li>
+
+            <li class="flex gap-5  bg-brown rounded-xl mx-2 my-1   ">
+              <img class="h-[50px] w-[50px] p-1" src="./src/img/Buscar.png" alt="Buscar">
+              <p class="self-center text-base font-bold">Search</p>
+            </li>
+
+            <li class=" bg-brown rounded-xl mx-2 my-1  ">
+              <div class="flex gap-5 p-0.5">
+                <img class="h-[50px] w-[50px] " src="./src/img/Libreria.png" alt="libreria">
+                <p class="self-center text-base font-bold" >Library</p>
+                <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
               </div>
-              <div class="flex gap-5  bg-brown rounded-xl mx-2 my-1   ">
-                <img class="h-[30px] w-[30px] p-1" src="./src/img/Buscar.png" alt="Buscar">
-                <p class="self-center text-base font-bold">Search</p>
-              </div>
-
-              <div class=" bg-brown rounded-xl mx-2 my-1  "> 
-              
-                <div class="flex gap-5 p-0.5" >
-                  <img class="h-[30px] w-[30px] " src="./src/img/Libreria.png" alt="libreria">
-                  <p class="self-center text-base font-bold" >Library</p>
-                  <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
-                </div>
-
-                <div class="flex gap-2 pl-4">
-                  <button class="bg-red rounded-full px-1 py-0.5">
-                    <p class="text-xs text-white ">Artistas</p>
-                  </button>
-                  <button class="bg-red rounded-full px-1 py-0.5">
-                    <p class="text-xs text-white">Albumes</p>
-                  </button>
-                  <button class="bg-red rounded-full px-1 py-0.5">
-                     <p class="text-xs text-white">Descargas</p>
-                  </button>
-                </div> 
-
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/Duki.png" alt="Duki">
-                  <p class="self-center text-base ">Duki</p>
-                </div>
-
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/xxxtentacion.png" alt="xxxtentacion">
-                  <p class="self-center text-base ">Xxxtentacion</p>
-                </div>
-
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/quevedo_donde_quiero_estar-portada .png" alt="Album donde quiero estar">
-                  <p class="self-center text-base ">Donde Quiero Estar</p>
-                </div>
-
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/Un verano sin ti.png" alt="Album un Un verano sin ti">
-                  <p class="self-center text-base ">Un Verano Sin Ti</p>
-                </div>
-
-              </div>
-
-              <div class=" bg-brown rounded-xl mx-2 my-1 ">
-
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/Playlist.png" alt="Playlist">
-                  <p class="self-center text-base font-bold">Playlist</p>
-                  <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
-                </div>
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/Agregar.png" alt="Agregar">   
-                  <p class="self-center text-base ">Create a new</p>
-                </div>
-               <div class="flex gap-5  bg-red    p-1">
-                  <img class="h-[30px] w-[30px] " src="./src/img/duko.png" alt="Duko portada playlist">
-                  <p class="self-center text-base font-bold ">Duko</p>
-                  <img class="h-[15px] w-[15px] self-center " src="./src/img/ondas-de-audio.png" alt="Ondas de audio2">
-                </div>
-                <div class="flex gap-5 p-1">
-                  <img class="h-[30px] w-[30px]" src="./src/img/Trap.png" alt="Trap portada playlist">
-                  <p class="self-center text-base ">Trap</p>
-                </div>
-              </div>
-            </div> 
-          </div>
-
-
-
-
-
-          <div class="bg-brown w-full " id="trackList">
-          
-            <div class=" flex flex-row items-stretch justify-between pl-3 pt-3 " >
-
-                <div class=" flex flex-row items-stretch  ">
-
-                  <img class="h-[110px] w-[110px]" src="./src/img/duki bzrap session.jpg" alt="Portada duki bzrap session">
-
-                  <div class="flex flex-col self-center pl-5 ">
-                    <p class="text-black text-2xl font-bold">Duki: Bzrp Music Session, Vol.50</p>
-                    <p class="text-black text-lg">Bizarrap, Duki</p>
-                  </div>
-
-                </div>
-
-              <div class=" flex items-stretch"> 
-                <p class="text-black text-lg self-center pr-10 ">3:41</p>
-              </div>
-            
-            </div> 
-          </div>
-
-
-
-<!-- 
-            <div class=" flex flex-row items-stretch justify-between pl-3 pt-3 overflow-y-auto" >
-
-                <div class=" flex flex-row items-stretch ">
-
-                  <img class="h-[110px] w-[110px]" src="./src/img/duki_antes_de_ameri-portada.jpg" alt="Portada antes de perderte og version">
-
-                  <div class="flex flex-col self-center pl-5 ">
-                    <p class="text-black text-2xl font-bold">antes de perderte (OG VERSION)</p>
-                    <p class="text-black text-lg">Duki</p>
-                  </div>
-
-                </div>
-
-              <div class=" flex items-stretch"> 
-                <p class="text-black text-lg self-center pr-10 ">2:46</p>
-              </div>
-            
-            </div> 
-
-
-            <div class=" flex flex-row items-stretch justify-between pl-3 pt-3" >
-
-                <div class=" flex flex-row items-stretch  ">
-
-                  <img class="h-[110px] w-[110px]" src="./src/img/Rockstar2.0.png" alt="Portada rockstar2.0">
-
-                  <div class="flex flex-col self-center pl-5 ">
-                    <p class="text-black text-2xl font-bold">RoCKSTAR 2.0</p>
-                    <p class="text-black text-lg">Duki, Jhayco</p>
-                  </div>
-
-                </div>
-
-              <div class=" flex items-stretch"> 
-                <p class="text-black text-lg self-center pr-10 ">2:53</p>
-              </div>
-            
-            </div> 
-
-            <div class=" flex flex-row items-stretch justify-between pl-3 pt-3 pb-3" >
-
-                <div class=" flex flex-row items-stretch  ">
-
-                  <img class="h-[110px] w-[110px]" src="./src/img/ticket.jpg" alt="Portada ticket">
-
-                  <div class="flex flex-col self-center pl-5 ">
-                    <p class="text-black text-2xl font-bold">Ticket - Vivo Calafate</p>
-                    <p class="text-black text-lg">Duki</p>
-                  </div>
-
-                </div>
-
-              <div class=" flex items-stretch"> 
-                <p class="text-black text-lg self-center pr-10 ">3:10</p>
-              </div> -->
-
-              <!-- <div class=" flex flex-row items-stretch justify-between pl-3 pt-3" >
-
-                <div class=" flex flex-row items-stretch  ">
-
-                  <img class="h-[110px] w-[110px]" src="./src/img/Rockstar2.0.png" alt="Portada rockstar2.0">
-
-                  <div class="flex flex-col self-center pl-5 ">
-                    <p class="text-black text-2xl font-bold">RoCKSTAR 2.0</p>
-                    <p class="text-black text-lg">Duki, Jhayco</p>
-                  </div>
-
-                </div>
-
-              <div class=" flex items-stretch"> 
-                <p class="text-black text-lg self-center pr-10 ">2:53</p>
-              </div>
-
-
 
               
-            
-            </div> 
-         </div> -->
+          </li>
 
- </main>
+          <li class=" bg-brown rounded-xl mx-2 my-1 ">
+              <div class="flex gap-5 p-1">
+                <img class="h-[50px] w-[50px]" src="./src/img/Playlist.png" alt="Playlist">
+                <p class="self-center text-base font-bold">Playlist</p>
+                <button><img class="h-[15px] w-[15px]" src="./src/img/proximo.png" alt="mas"></button>
+              </div>
+             
+          </li>
 
-    <footer class="flex flex-row absolute bottom-0 left-0 w-full ">
+          <li class="flex flex-row absolute bottom-0 left-0 w-full  ">
+            <div class="bg-red flex h-20 w-full justify-evenly items-stretch    ">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/repetir.png" alt="repetir cancion">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Anterior.png" alt="Cancion anterior">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Pausa.png" alt="Pausar cancion">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Siguiente.png" alt="cancion Siguiente">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/aleatorio 1.png" alt="Canciones aleatorias">
       
-      <div class="bg-red flex  w-[320px] justify-evenly items-stretch   ">
-        <img class="h-[30px] w-[30px] self-center ..." src="./src/img/repetir.png" alt="repetir cancion">
-        <img class="h-[30px] w-[30px] self-center ..." src="./src/img/Anterior.png" alt="Cancion anterior">
-        <img class="h-[30px] w-[30px] self-center ..." src="./src/img/Pausa.png" alt="Pausar cancion">
-        <img class="h-[30px] w-[30px] self-center ..." src="./src/img/Siguiente.png" alt="cancion Siguiente">
-        <img class="h-[30px] w-[30px] self-center ..." src="./src/img/aleatorio 1.png" alt="Canciones aleatorias">
+            </div>
 
-      </div>
+          </li>
+
+            
+
+          </ul>
+
+      
+
+      </header>
+
+      <main  class="h-full w-[100%] box-border overflow-hidden relative bg-white" >
+
+        <div class="bg-red w-full flex flex-row items-stretch justify-between h-[55px]">
+
+          <div class="flex flex-row self-center pl-4 gap-5 text-xl">
+            <p class="font-bold">Playlist</p>
+          </div>
+
+          <div class="flex flex-row self-center bg-white gap-4 rounded-full px-3 py-1  ">
+            <img class="h-[25px] w-[25x] " src="./src/img/buscarplaylist.png" alt="Buscar">
+            <p class="self-center font-normal">Buscar en Playlist</p>
+          </div>
+
+          <div class="self-center pr-4">
+            <button><img class="h-[35px] w-[35x]" src="./src/img/Menu 3 puntos.png" alt="Menu2"></button>
+            <button><img class="h-[35px] w-[35x]" src="./src/img/usuario.png" alt="Usuario"></button>
+          </div>
 
 
-       <div class="bg-red flex w-full justify-between items-stretch ">
+        </div>
 
+
+
+        <div class="bg-white grid grid-cols-1 2xl:lg:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-2 gap-0" id="track_list">
+
+            <div class="bg-brown m-2 p-2 rounded-xl">
+              <div class="flex flex-row gap-1">
+                <img class="h-[100px] w-[100px]" src="./src/img/duki bzrap session.jpg" alt="Portada duki bzrap session">
+                <div >
+                  <p class="text-black text-sm font-bold">Duki: Bzrp Music Session, Vol.50</p>
+                  <p class="text-black text-sm">Bizarrap, Duki</p>
+                </div>
+              </div > 
+              <div class="flex flex-row justify-center">
+                <p class="text-black text-lg  pr-10 font-semibold">3:41</p>             
+              </div>                          
+            </div>           
+        </div>
+
+        <div class="bg-red w-full flex flex-row items-stretch justify-between absolute bottom-0 left-0 h-20">
           <div class="flex pl-4">
             <img class="h-[50px] w-[50px] self-center ... " src="./src/img/Harakiri portada.png" alt="Portada Harakiri">
             <div class="flex flex-col self-center ...">
@@ -280,30 +127,31 @@
           
           <div class=" flex" >
             <p class="self-center ... p-2 font-medium">1:55</p>
-            <img src="./src/img/Ondas de sonido reproduciendo.png" alt="Iondas de volumen reproduciendo">
+            <img class="h-[70px]" src="./src/img/Ondas de sonido reproduciendo.png" alt="Iondas de volumen reproduciendo">
             <p class="self-center ... font-medium">2:49</p>
           </div>
-         
+        
           <div class=" flex gap-3 pr-4" >
-            <img class="h-[30px] w-[30px] self-center ..." src="./src/img/Expandir.png" alt="Expandir pantalla">
+            <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Expandir.png" alt="Expandir pantalla">
             <div class="flex ">
-              <img class="h-[30px] w-[30px] self-center ..." src="./src/img/Volumen.png" alt="Volumen">
+              <img class="h-[40px] w-[40px] self-center ..." src="./src/img/Volumen.png" alt="Volumen">
               <img class="h-[10px] w-[60px] self-center ..."  src="./src/img/barra de volumen.png" alt="">
             </div>
             
           </div>
+          
 
-        </div>  
 
+
+        </div>
+
+      
+
+      </main>
     
 
 
-
-
-
-
-
-    </footer>
+  
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

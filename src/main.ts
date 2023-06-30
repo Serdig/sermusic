@@ -1,42 +1,19 @@
 import { CardSong } from './components/CardSong'
 import { getData } from './services'
 import './style.css'
-import { toggleClass} from './utils'
-// import
-// toggleClass(document.getElementById('navbar'), 'show-navbar')
 
-const contenedorCanciones: HTMLElement|null = document.getElementById('trackList')
+const track_list = document.getElementById('track_list')
 
+getData(data => {
+  data.map(song => {
+    track_list?.appendChild(CardSong({
+      data: song, 
+    
+    }))
 
-getData((res) => {
-
-
-
-
+  })
 })
 
-
-
-
-
-
-// let mensaje: string = 'Hola'
-
-
-// setTimeout(() => {
-
-
-//     mensaje += 'Mundo'
-
-
-
-
-
-
-// })
-
-
-// ASINCRONISMO
 
 
 
